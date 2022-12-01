@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<controls:AuthorizedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                         xmlns:controls="clr-namespace:RiceCakeSoftware.MauiTemplate.Controls"
+                         xmlns:viewmodels="clr-namespace:RiceCakeSoftware.MauiTemplate.ViewModels"
+                         x:Class="RiceCakeSoftware.MauiTemplate.Views.DashboardPage"
+                         x:DataType="viewmodels:DashboardPageViewModel"
+                         ControlTemplate="{StaticResource AuthorizedPageScaffold}"
+                         HeaderTitle="{Binding HeaderTitle}"
+                         LogoutCommand="{Binding LogoutCommand}">
+    <VerticalStackLayout BackgroundColor="Transparent">
+        <Frame CornerRadius="8">
+            <Label Text="ダッシュボードページ" />
+        </Frame>
+    </VerticalStackLayout>
+</controls:AuthorizedPage>

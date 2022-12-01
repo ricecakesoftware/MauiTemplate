@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<controls:ModalPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:controls="clr-namespace:RiceCakeSoftware.MauiTemplate.Controls"
+                    xmlns:viewmodels="clr-namespace:RiceCakeSoftware.MauiTemplate.ViewModels"
+                    x:Class="RiceCakeSoftware.MauiTemplate.Views.DetailPage"
+                    x:DataType="viewmodels:DetailPageViewModel"
+                    ControlTemplate="{StaticResource ModalPageScaffold}"
+                    HeaderTitle="{Binding HeaderTitle}"
+                    BackCommand="{Binding BackCommand}"
+                    Shell.PresentationMode="ModalAnimated">
+    <VerticalStackLayout BackgroundColor="Transparent">
+        <Frame CornerRadius="8">
+            <VerticalStackLayout>
+                <Label Text="詳細ページ" />
+                <Button Text="戻る" Command="{Binding BackCommand}" />
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</controls:ModalPage>

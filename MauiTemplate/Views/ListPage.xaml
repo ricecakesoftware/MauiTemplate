@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<controls:AuthorizedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                         xmlns:controls="clr-namespace:RiceCakeSoftware.MauiTemplate.Controls"
+                         xmlns:viewmodels="clr-namespace:RiceCakeSoftware.MauiTemplate.ViewModels"
+                         x:Class="RiceCakeSoftware.MauiTemplate.Views.ListPage"
+                         x:DataType="viewmodels:ListPageViewModel"
+                         ControlTemplate="{StaticResource AuthorizedPageScaffold}"
+                         HeaderTitle="{Binding HeaderTitle}"
+                         LogoutCommand="{Binding LogoutCommand}">
+    <Grid ColumnDefinitions="*" RowDefinitions="Auto, *" BackgroundColor="Transparent">
+        <Frame Grid.Column="0" Grid.Row="0" CornerRadius="8">
+            <Label Text="一覧ページ" />
+        </Frame>
+        <Button Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Margin="16" ImageSource="add_black_48dp.svg" HeightRequest="48" WidthRequest="48" CornerRadius="32" Command="{Binding AddCommand}" />
+    </Grid>
+</controls:AuthorizedPage>
