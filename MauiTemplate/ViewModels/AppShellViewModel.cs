@@ -3,6 +3,6 @@
 namespace RiceCakeSoftware.MauiTemplate.ViewModels;
 
 [ObservableObject]
-public partial class MainShellViewModel
+public partial class AppShellViewModel
 {
 }

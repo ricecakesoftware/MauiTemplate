@@ -2,9 +2,9 @@ using RiceCakeSoftware.MauiTemplate.ViewModels;
 
 namespace RiceCakeSoftware.MauiTemplate.Views;
 
-public partial class MainShell
+public partial class AppShell
 {
-    public MainShell(MainShellViewModel vm)
+    public AppShell(AppShellViewModel vm)
     {
         InitializeComponent();
         BindingContext = vm;
